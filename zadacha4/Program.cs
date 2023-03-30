@@ -1,15 +1,19 @@
-﻿int a;
-int b;
-int c;
-int max=a;
+﻿int numberA;
+int numberB;
+int numberC;
 Console.WriteLine("Введите три числа.");
-a = Convert.ToInt32(Console.ReadLine());
-b = Convert.ToInt32(Console.ReadLine());
-с = Convert.ToInt32(Console.ReadLine());
-if (b>max)
+numberA = Convert.ToInt32(Console.ReadLine());
+numberB = Convert.ToInt32(Console.ReadLine());
+numberC = Convert.ToInt32(Console.ReadLine());
+int max=numberA;
+if (numberB>max)
 {
-    max=b;
+    max=numberB;
 }
-if (c>max){max=c}
+if (numberC>max)
+{
+    max=numberC;
+}
 
-Console.WriteLine(max);
+Console.Write("max=");
+Console.Write(max);
